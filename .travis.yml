@@ -15,3 +15,5 @@ before_install:
 deploy:
   provider: script
   script: docker pull gary29198/example && docker run gary29198/example
+  on:
+    branch: master
